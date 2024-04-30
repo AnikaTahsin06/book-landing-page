@@ -1,1 +1,72 @@
- 
+@font-face {
+    font-family: 'Istok Web';
+    src: url(font/IstokWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url(font/IstokWeb-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Light.ttf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Bold.ttf);
+    font-weight: 700;
+}
+
+:root {
+    --primary-color: #013456;
+    --accent-color: #FAD405;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 81px;
+    max-width: 90%;
+    margin: 0 auto;
+    font-family: 'Istok Web';
+}
+
+.header-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header span {
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.header .plane-ico {
+    color: var(--accent-color);
+}
+
+.header-navigation {
+    display: flex;
+    height: 52px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.header-navigation a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.header .menu-ico,
+.header .close-ico {
+    display: none;
+}
